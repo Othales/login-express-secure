@@ -1,0 +1,7 @@
+{
+  "password": "Contraseña",
+  "remember": "Recordar e-mail",
+  "log-in": "Iniciar sesión",
+  "recovery": "Contraseña de recuperación?",
+  "log-in-error": "E-mail y/o contraseña incorrectos!"
+}

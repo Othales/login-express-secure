@@ -1,0 +1,7 @@
+{
+	"password": "Password",
+	"remember": "Remember e-mail",
+	"log-in": "Log in",
+	"recovery": "Recover password?",
+	"log-in-error": "Incorrect e-mail and/or password!"
+}

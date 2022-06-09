@@ -1,0 +1,172 @@
+html, body {
+    background: url(../img/bg.jpg) repeat;
+    height: 100vh;
+    width: 100vw;
+    font-size: 12px;
+    color: #cfd4d8;
+}
+
+button {
+    height: 26px;
+    font-size: 11px;
+    color: #222222;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    margin: 0;
+    line-height: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-shadow: 0 1px 0 rgb(255 255 255 / 15%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 16%), 0 1px 1px rgb(0 0 0 / 40%);
+    background-color: #bd8302;
+    -webkit-transition: box-shadow 0.3s ease;
+    -moz-transition: box-shadow 0.3s ease;
+    -o-transition: box-shadow 0.3s ease;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2)) !important;
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2)) !important;
+}
+
+button:hover {
+    box-shadow: inset 0 0 10px rgb(255 255 255 / 30%), inset 0 1px 0 rgb(255 255 255 / 10%), 0 1px 2px rgb(0 0 0 / 40%);
+}
+
+button:focus {
+    outline: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+}
+
+.container {
+    height: calc(100% - 28px);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 80%;
+    margin: 48px auto;
+    align-self: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 60%
+}
+
+.form {
+    width: 100%;
+    align-self: center;
+    padding: 0 50px;
+}
+
+.form input {
+    background: transparent !important;
+    border: 0;
+    border-bottom: 2px solid #cfd4d8;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none !important;
+    color: #fff !important;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+}
+
+.form-control:focus {
+    border-color: #a9afb2;
+}
+
+.form .form-group {
+    margin-bottom: 2.5rem;
+}
+
+.form button {
+    padding: 4px 20px;
+}
+
+.row {
+    margin-left: 2px;
+}
+
+.form-remember {
+    float: right;
+    margin-top: -20px;
+}
+
+.btn-m {
+    height: 34px;
+}
+
+.notification {
+    width: auto;
+    padding: 7px 8px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    color: #ff0000;
+    text-shadow: 0 1px 0 #000;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 6%), 0 -1px 1px rgb(255 255 255 / 3%);
+}
+
+.recovery {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: underline !important;
+    color: #cfd4d8 !important;
+}
+
+@media (min-width: 576px) {
+    .container {
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .body_main .logo {
+        width: 80%;
+    }
+
+    .container .form {
+        width: 100%;
+        padding: 0 50px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        font-size: 14px;
+    }
+
+    .container .logo {
+        width: 40%;
+        margin: 0;
+    }
+
+    .container .form {
+        width: 60%;
+        border-left: 1px solid #cfd4d8;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        font-size: 12px;
+    }
+
+    .container .logo {
+        width: 50%;
+    }
+
+    .container .form {
+        width: 50%;
+    }
+}

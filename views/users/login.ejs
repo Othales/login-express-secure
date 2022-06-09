@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login - Hype</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <main class="container">
+        <figure class="logo">
+            <img src="/img/auth-img.png" alt="logo">
+        </figure>
+
+        <div class="form">
+            <form action="/login" method="post">
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" name="email" title="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password"><%= __('password') %></label>
+                    <input type="password" class="form-control" name="password" title="password" required>
+                </div>
+
+                <div class="form-remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember"><%= __('remember') %></label>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <button type="submit" class="btn-m"><%= __('log-in') %></button>
+                    </div>
+                    <div class="row">
+                        <a class="recovery" href="/recovery">
+                            <%= __('recovery') %>
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+            <% if(errorFlashMessage){ %>
+                <div class="notification">
+                    <%= __(errorFlashMessage) %>
+                </div>
+            <% } %>
+        </div>
+    </main>
+</body>
+</html>
